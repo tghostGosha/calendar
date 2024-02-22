@@ -1,0 +1,150 @@
+.calendar {
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 12px;
+}
+.calendar__modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.calendar__header {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+.calendar__header > div {
+    width: 105px;
+    cursor: pointer;
+}
+.calendar__header button {
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.calendar__body {
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+
+.calendar__week__names {
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px 1px;
+    color: rgb(100 116 139);
+}
+
+.calendar__days {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+}
+
+.calendar__day {
+    border-radius: 5px;
+    padding: 5.5px 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.calendar__day:hover {
+    border: 1px solid rgb(241 245 249);
+}
+
+.calendar__additional__day {
+    padding: 5.5px;
+    font-weight: 300;
+    cursor: pointer;
+   visibility: hidden;
+}
+
+.calendar__pick__item {
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar__pick__item:hover {
+
+    border: 1px solid rgb(241 245 249);
+}
+
+.calendar__today__item {
+    background-color: transparent;
+}
+
+.calendar__selected__item {
+
+    border: 1px solid darkgreen;
+}
+.calendar__selected__item:hover {
+
+    border: 1px solid darkgreen;
+}
+
+.calendar__pick__items__container {
+    font-weight: 400;
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px 1px;
+    font-size: 12px;
+}
+
+.calendar__unchoosable__year {
+    font-weight: 300;
+    padding: 9px 16px;
+    border: 1px solid transparent;
+
+}
+.btn-check {
+    width: 100%;
+    padding: 10px 0;
+    background-color: green;
+    color: white;
+}
+.underline {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+.green-text{
+    background-color: green;
+}
+.orange-text{
+    background-color: orange;
+}
+.background-color{
+    color: grey;
+}
